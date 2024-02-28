@@ -1,0 +1,89 @@
+body {
+    background-color: black;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
+    gap: 1.5rem;
+}
+.box{
+    transition: width 1s, transform 1s;
+    
+}
+
+.b1 {
+
+    background-position:380px; 
+    background-size: cover;
+    height: 500px;
+    width: 200px;
+    background-image: url("pics/mos.jpg");
+    object-fit: cover;
+}
+
+.b2 {
+    background-position:370px; 
+    background-size: cover;
+    height: 500px;
+    width: 200px;
+    background-image: url("pics/ayham.jpg");
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.b3 {
+    background-position:275px; 
+    background-size: cover;
+    height: 500px;
+    width: 200px;
+    background-image: url("pics/abd.jpg");
+}
+
+.b4 {
+    background-position:285px; 
+    background-size: cover;
+    height: 500px;
+    width: 200px;
+    background-image: url("pics/taif.jpg");
+
+}
+
+.b5 { 
+    background-position:320px; 
+    background-size: cover;
+    height: 500px;
+    width: 200px;
+    background-image: url("pics/moh.jpg");
+    object-fit: cover;
+}
+.other{
+  
+    filter: grayscale(100%); ;
+}
+.mouseOn{
+    width:300px
+    
+}
+.n1, .n2, .n3, .n4, .n5 {
+    padding: 10px;
+    text-align: center;
+    margin-top: 500px;
+    background-color: black;
+    color: beige;
+    display: block; /* Show the names initially */
+    transition: transform 0.5s ease; /* Smooth out transition */
+    transform: translateY(100%); /* Start the names hidden below the image */
+}
+.nameVisible {
+    transform: translateY(-100%); /* Move the name to its visible position */
+}
+
+.namePop {
+    transform: translateY(-50px); /* Adjust as needed */
+    transition: transform 0.5s ease; /* Adjust duration and easing */
+}
